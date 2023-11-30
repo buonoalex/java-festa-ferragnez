@@ -4,18 +4,20 @@ public class Guess {
 
     private String name;
     private String surname;
-    private int age;
 
     //Costrutture Personale
-    public Guess(String name, String surname,int age){
+    public Guess(String name, String surname){
         this.name = name;
         this.surname = surname;
-        this.age = age;
+    }
+
+    public Guess(){
+
     }
 
     //Stampa Guess(Function)
-    public void PrintGuess(Guess guess){
-        System.out.println("Name : "+guess.name+" Surname : "+guess.surname+" Age : "+guess.age);
+    public void PrintGuess(){
+        System.out.println("Name : "+this.name+" Surname : "+this.surname);
     }
 
     //Get e Set
@@ -33,14 +35,6 @@ public class Guess {
 
     public void setSurname(String surname) {
         this.surname = surname;
-    }
-
-    public int getAge() {
-        return age;
-    }
-
-    public void setAge(int age) {
-        this.age = age;
     }
 
 }
