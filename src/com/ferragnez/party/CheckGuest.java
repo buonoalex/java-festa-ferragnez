@@ -20,12 +20,12 @@ public class CheckGuest {
             if(arrayGuess2[i].indexOf(" ") == -1){
                 String soloname = arrayGuess2[i];
                 guessList[i] = new Guess();
-                guessList[i].setName(soloname);
+                guessList[i].setName(soloname.toLowerCase());
             }else{
                 int posizioneSpazio = arrayGuess2[i].indexOf(" ");
                 String name = arrayGuess2[i].substring(0,posizioneSpazio);
                 String surname = arrayGuess2[i].substring(posizioneSpazio+1, arrayGuess2[i].length());
-                guessList[i] = new Guess(name,surname);
+                guessList[i] = new Guess(name.toLowerCase(),surname.toLowerCase());
             }
             guessList[i].PrintGuess();
         }
@@ -34,11 +34,11 @@ public class CheckGuest {
         Guess guessToFind = new Guess();
         String nameGuess;
         System.out.println("Inserisci il nome del tuo ospite : ");
-        guessToFind.setName(myScanBro.nextLine());
+        guessToFind.setName(myScanBro.nextLine().toLowerCase());
 
         String surnameGuess;
         System.out.println("Inserisci il cognome del tuo ospite : ");
-        guessToFind.setSurname(myScanBro.nextLine());
+        guessToFind.setSurname(myScanBro.nextLine().toLowerCase());
 
         boolean sentinella = false;
         for (int i = 0; i < guessList.length && !sentinella ; i++) {
