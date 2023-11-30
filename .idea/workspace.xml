@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ee527fc9-51da-4679-9868-6d143fc7f51b" name="Changes" comment="Start project and add Class Guess">
+    <list default="true" id="ee527fc9-51da-4679-9868-6d143fc7f51b" name="Changes" comment="Finish work and apply Override on equals">
+      <change afterPath="$PROJECT_DIR$/src/com/ferragnez/party/CheckGuestGenation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/ferragnez/party/CheckGuest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ferragnez/party/CheckGuest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/ferragnez/party/Guess.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ferragnez/party/Guess.java" afterDir="false" />
@@ -58,11 +59,45 @@
       <option name="project" value="LOCAL" />
       <updated>1701348454201</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Create Array and put in guess">
+      <option name="closed" value="true" />
+      <created>1701351627831</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1701351627831</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Finish work and apply Override on equals">
+      <option name="closed" value="true" />
+      <created>1701359438626</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1701359438626</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Start project and add Class Guess" />
-    <option name="LAST_COMMIT_MESSAGE" value="Start project and add Class Guess" />
+    <MESSAGE value="Create Array and put in guess" />
+    <MESSAGE value="Finish work and apply Override on equals" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finish work and apply Override on equals" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/ferragnez/party/CheckGuestGenation.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/java_festa_ferragnez$CheckGuest.ic" NAME="CheckGuest Coverage Results" MODIFIED="1701363347665" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.ferragnez.party.*</FILTER>
+    </SUITE>
   </component>
 </project>

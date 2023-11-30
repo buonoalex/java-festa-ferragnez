@@ -1,6 +1,5 @@
 package com.ferragnez.party;
 
-import java.util.Objects;
 import java.util.Scanner;
 
 public class CheckGuest {
@@ -8,30 +7,28 @@ public class CheckGuest {
         //Apro scan
         Scanner myScanBro = new Scanner(System.in);
 
-        Guess[] guessList = new Guess[11];
+        int numberOfGuess = 11;
 
-        //Completamento array da stringa
-        String listCompleteGuess = "Dua,Lipa,Paris,Hilton,Manuel,Agnelli,Alessandro,Aleotti,Francesco,Totti,Ilary,Blasi,Bebe,Vio,Sergio,Lerme,Pardis,Zarei,Martina,Maccherone,Rachel,Zeilic";
+        Guess[] guessList = new Guess[numberOfGuess];
 
+        //Alternativa
+        String listCompleteGuess2 = "Dua Lipa,Paris Hilton,Manuel Agnelli,J-Ax,Francesco Totti,Ilary Blasi,Bebe Vio,Luis,Pardis Zarei,Martina Maccherone,Rachel Zeilic";
 
-        //Riempimemto
-        String[] arrayGuess = listCompleteGuess.split(",");
-
-        for (int i = 0, j = 0; i < guessList.length; i++, j = j + 2) {
-            guessList[i] = new Guess();
-            guessList[i].setName(arrayGuess[j]);
-            guessList[i].setSurname(arrayGuess[j + 1]);
-        }
-
-        //Stampo Array
-        System.out.println("----------------------");
-        System.out.println("Ecco la Lista degli ospiti che posso entrare : \n");
+        String[] arrayGuess2 = listCompleteGuess2.split(",");
 
         for (int i = 0; i < guessList.length; i++) {
+            if(arrayGuess2[i].indexOf(" ") == -1){
+                String soloname = arrayGuess2[i];
+                guessList[i] = new Guess();
+                guessList[i].setName(soloname);
+            }else{
+                int posizioneSpazio = arrayGuess2[i].indexOf(" ");
+                String name = arrayGuess2[i].substring(0,posizioneSpazio);
+                String surname = arrayGuess2[i].substring(posizioneSpazio+1, arrayGuess2[i].length());
+                guessList[i] = new Guess(name,surname);
+            }
             guessList[i].PrintGuess();
         }
-
-        System.out.println("-----------------------");
 
         //Input Utente
         Guess guessToFind = new Guess();
@@ -56,9 +53,9 @@ public class CheckGuest {
             System.out.println("NON puoi entrare");
         }
 
-
         //Chiudo scan
         myScanBro.close();
+
     }
 
 }
